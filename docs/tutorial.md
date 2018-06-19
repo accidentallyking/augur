@@ -1,3 +1,5 @@
+1-org-outside.md needs to be more visiable to new users. 
+
 # Augur Tutorial: a metric from start to finish
 
 This tutorial shows the entire process of adding a metric to Augur. You will complete the following steps:
@@ -17,7 +19,7 @@ In order to know which metrics still need to be developed, run `make metrics-sta
 
 ## Prototyping a metric
 
-Now that we've chosen the 'lines-deleted' metric, we next need to write function that implements it. While this could be done directly in the class files, we will use a Jupyter notebook while developing the implementation. This allows us to take advantage of Jupyter's advanced logging capabilities.
+Now that we've chosen the 'lines-deleted' metric, we next need to write function that implements it. While this could be done directly in the class files, we will use a Jupyter notebook(WHY) while developing the implementation. This allows us to take advantage of Jupyter's advanced logging capabilities.
 
 First, we need to figure out how we are going to get the data we need. Since there are already connectors to [GHTorrent](http://ghtorrent.org/relational.html) and the [GitHub API](https://developer.github.com/v3/) we will look at their documentation first. While searching GitHub's documentation, we can see that they provide [an endpoint](https://developer.github.com/v3/repos/statistics/#get-the-number-of-additions-and-deletions-per-week) to "get the number of additions and deletions per week". Perfect!
 
